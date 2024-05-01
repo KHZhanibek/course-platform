@@ -29,8 +29,8 @@ export default function AllCoursesPage() {
     <MyContainer>
       <TypographyH1>Courses</TypographyH1>
       <div className="grid lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  gap-8">
-        {data.map((course: Course) => (
-          <CourseCard item={course} />
+        {data.map((course, ind) => (
+          <CourseCard key={ind} item={course as Course} />
         ))}
       </div>
     </MyContainer>
