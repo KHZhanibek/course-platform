@@ -41,6 +41,7 @@ export class AuthService {
         password: hashedPassword,
       },
     });
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { password, ...result } = newUser;
     return result;
   }
